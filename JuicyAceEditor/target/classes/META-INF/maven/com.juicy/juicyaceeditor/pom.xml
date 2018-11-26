@@ -8,7 +8,7 @@
 	<artifactId>juicyaceeditor</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>JuicyAceEditor</name>
-	<description>Integration of game-card for Vaadin 10</description>
+	<description>Juice-Ace-Editor for Vaadin 10</description>
 
 	<properties>
 		<vaadin.version>10.0.4</vaadin.version>

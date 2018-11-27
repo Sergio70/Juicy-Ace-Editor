@@ -4,7 +4,6 @@ import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.HasText;
 import com.vaadin.flow.component.Tag;
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.dependency.HtmlImport;
 
 @SuppressWarnings("serial")
@@ -13,7 +12,6 @@ import com.vaadin.flow.component.dependency.HtmlImport;
 public class JuicyAceEditor extends Component implements HasSize, HasText {
 
 	public JuicyAceEditor() {
-		UI.getCurrent().getPage().addJavaScript("src-noconflict/worker-xquery.js");
 	}
 
 	public void setMode(String mode) {

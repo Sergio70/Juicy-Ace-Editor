@@ -6,7 +6,7 @@
 
 	<groupId>com.juicy</groupId>
 	<artifactId>juicyaceeditor</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<name>JuicyAceEditor</name>
 	<description>Juice-Ace-Editor for Vaadin flow</description>
 

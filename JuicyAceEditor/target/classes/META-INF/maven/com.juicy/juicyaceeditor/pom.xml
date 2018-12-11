@@ -6,12 +6,12 @@
 
 	<groupId>com.juicy</groupId>
 	<artifactId>juicyaceeditor</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.5</version>
 	<name>JuicyAceEditor</name>
 	<description>Juice-Ace-Editor for Vaadin flow</description>
 
 	<properties>
-		<vaadin.version>10.0.4</vaadin.version>
+		<vaadin.version>11.0.0</vaadin.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>

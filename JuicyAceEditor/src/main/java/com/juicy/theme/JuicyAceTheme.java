@@ -1,5 +1,9 @@
 package com.juicy.theme;
 
+/**
+ * @author: Sergio Alberto Hilerio.
+ */
+
 public enum JuicyAceTheme {
 
 	ambiance, chaos, chrome, clouds, clouds_midnight, cobalt, crimson_editor, dawn, dracula, dreamweaver, eclipse,

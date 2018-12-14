@@ -1,5 +1,9 @@
 package com.juicy.mode;
 
+/**
+ * @author: Sergio Alberto Hilerio.
+ */
+
 public enum JuicyAceMode {
 
 	abap, abc, actionscript, ada, apache_conf, asciidoc, assembly_x86, autohotkey, batchfile, c9search, c_cpp, cirru,

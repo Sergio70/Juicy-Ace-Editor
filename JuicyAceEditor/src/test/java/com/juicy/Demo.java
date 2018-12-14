@@ -5,6 +5,7 @@ import com.juicy.theme.JuicyAceTheme;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+@SuppressWarnings("serial")
 @Route("")
 public class Demo extends Div {
 
@@ -17,16 +18,15 @@ public class Demo extends Div {
 		juicyAceEditor.setWidth("1000px");
 		juicyAceEditor.setHeight("500px");
 		juicyAceEditor.setFontsize(15);
-		juicyAceEditor.setSofttabs(false);
-		juicyAceEditor.setTabsize(15);
-		// juicyAceEditor.setReadonly(true);
-		// juicyAceEditor.setWrapmode(true);
-		// juicyAceEditor.setMaxLines(5);
-		// juicyAceEditor.setMinLines(5);
-		//juicyAceEditor.setShadowStyle("");
-		
-		System.out.println("getValue: " + juicyAceEditor.getValue());
+//		juicyAceEditor.setSofttabs(false);
+//		juicyAceEditor.setTabsize(15);
+		juicyAceEditor.setReadonly(false);
+//		juicyAceEditor.setWrapmode(false);
+//		juicyAceEditor.setMaxLines(2);
+//		juicyAceEditor.setMinLines(2);
+		// juicyAceEditor.setShadowStyle("");
 
+		System.out.println("getValue: " + juicyAceEditor.getValue());
 		juicyAceEditor.addValueChangeListener(e -> {
 			System.out.println("ValueChangeListener: " + e.getValue());
 		});

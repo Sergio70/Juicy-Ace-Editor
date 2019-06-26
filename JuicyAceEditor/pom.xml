@@ -6,7 +6,7 @@
 
 	<groupId>com.juicy</groupId>
 	<artifactId>juicyaceeditor</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.9</version>
 	<name>JuicyAceEditor</name>
 	<description>Juice-Ace-Editor for Vaadin flow</description>
 
@@ -106,7 +106,8 @@
 					<!-- Use test scope because the UI/demo classes are in the test package. -->
 					<useTestScope>true</useTestScope>
 					<webAppConfig>
-						<resourceBase>src/main/resources/META-INF/resources</resourceBase>
+						<resourceBase>${project.basedir}/src/main/resources/META-INF/resources</resourceBase>
+						<resourceBase>${project.basedir}/src/test/resources/</resourceBase>
 					</webAppConfig>
 				</configuration>
 			</plugin>

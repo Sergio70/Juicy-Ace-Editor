@@ -2,7 +2,8 @@ package com.juicy;
 
 import com.juicy.mode.JuicyAceMode;
 import com.juicy.theme.JuicyAceTheme;
-import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.AbstractSinglePropertyField;
+import com.vaadin.flow.component.Focusable;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.Synchronize;
 import com.vaadin.flow.component.Tag;
@@ -11,13 +12,13 @@ import com.vaadin.flow.component.dependency.HtmlImport;
 /**
  * @author: Sergio Alberto Hilerio.
  */
-
 @SuppressWarnings("serial")
 @Tag("juicy-ace-editor")
 @HtmlImport("bower_components/juicy-ace-editor/juicy-ace-editor.html")
-public class JuicyAceEditor extends Component implements HasSize {
+public class JuicyAceEditor extends AbstractSinglePropertyField<JuicyAceEditor, String> implements HasSize, Focusable<JuicyAceEditor> {
 
 	public JuicyAceEditor() {
+		super("value", "", false);
 	}
 
 	/**
@@ -134,18 +135,19 @@ public class JuicyAceEditor extends Component implements HasSize {
 		return getElement().getProperty("value");
 	}
 
-	/**
-	 * Add a value change listener. The listener is called when the user or
-	 * programmatically changes the value of editor.
-	 * 
-	 * @return this JuicyAceEditor.
-	 */
-	public void addValueChangeListener(ValueChangeListener listener) {
-		this.getElement().addEventListener("change", args -> listener.valueChange(this));
-	}
 
-	public static interface ValueChangeListener {
-		public void valueChange(JuicyAceEditor juicyAceEditor);
-	}
+//	/**
+//	 * Add a value change listener. The listener is called when the user or
+//	 * programmatically changes the value of editor.
+//	 * 
+//	 * @return this JuicyAceEditor.
+//	 */
+//	public void addValueChangeListener(ValueChangeListener listener) {
+//		this.getElement().addEventListener("change", args -> listener.valueChange(this));
+//	}
+//
+//	public static interface ValueChangeListener {
+//		public void valueChange(JuicyAceEditor juicyAceEditor);
+//	}
 
 }

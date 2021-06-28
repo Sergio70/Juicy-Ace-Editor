@@ -11,7 +11,7 @@
 	<description>Juice-Ace-Editor for Vaadin flow</description>
 
 	<properties>
-		<vaadin.version>11.0.0</vaadin.version>
+		<vaadin.version>14.6.2</vaadin.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
